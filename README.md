@@ -72,7 +72,7 @@ GET /api/apps/324715238/reviews/
 ```
 
 Get an app's ratings
-(upstream library is buggy - use the `id` not the `appId`)
+(use the `id` not the `appId`)
 
 ```http
 GET /api/apps/org.wikimedia.wikipedia/ratings/
@@ -91,6 +91,7 @@ GET /api/apps/?suggest=face
 ```
 
 Get apps by developer
+(use the numeric id and not the string)
 
 ```http
 GET /api/developers/324715241/
